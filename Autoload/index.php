@@ -1,5 +1,8 @@
 <?php
+
+declare(strict_types=1);
 include 'includes/autoloader.inc.php';
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -9,12 +12,12 @@ include 'includes/autoloader.inc.php';
 </head>
 <body>
 <?php
-$person = new Person("Min Thu Zaw", 22);
+$person = new Person('Min Thu Zaw', 22);
 echo $person->getPerson();
 
-echo "</br>";
+echo '</br>';
 
-$address = new House("Yaw Gi Kyaung Street", 25);
+$address = new House('Yaw Gi Kyaung Street', 25);
 echo $address->getAddress();
 ?>
 </body>

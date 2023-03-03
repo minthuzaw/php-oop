@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 spl_autoload_register('myAutoLoader');
 function myAutoLoader($className)
 {
-    $path = "classes/";
-    $extension = ".class.php";
+    $path = 'classes/';
+    $extension = '.class.php';
     $fullPath = $path . $className . $extension;
 
     if (!file_exists($fullPath)) {
