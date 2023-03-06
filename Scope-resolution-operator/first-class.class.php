@@ -1,7 +1,7 @@
 <?php
 
 namespace FirstClass;
-class FirstClass
+Abstract class FirstClass
 {
     public const EXAMPLE = "You can't change this variable, this is const variable.\n";
 
